@@ -1,6 +1,13 @@
 # jwt-decode-service
 A simple REST API to decode JSON Web Tokens
 
+## Why
+I use this to quickly decode jwt tokens in PostMan. I have PostMan
+configured to save jwt tokens to a global variable whenever I
+authenticate with an auth service. Jwt-decode-service allows me to parse
+the token from within PostMan by making a POST request, which is easier
+than copying and pasting the token into [https://jwt.io](https://jwt.io).
+
 ## Usage
 Run the service with `npm start`
 
