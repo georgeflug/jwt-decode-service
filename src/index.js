@@ -19,9 +19,17 @@ app.post('/jwt', (req, res, next) => {
     const jwt = req.body.token;
     const header = jwtDecode(jwt, { header: true });
     const body = jwtDecode(jwt);
-    const result = {
+    res.json({
         header,
         body,
-    };
-    res.json(result);
+        issuedAt: formatTime(body.iat),
+        expiresAt: formatTime(body.exp),
+    });
 });
+
+function formatTime(epochTime) {
+    if (epochTime == null) {
+        return null;
+    }
+    return new Date(epochTime * 1000);
+}
