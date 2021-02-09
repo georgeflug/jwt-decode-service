@@ -27,3 +27,8 @@ This will produce output similar to the following:
     "expiresAt": null
 }
 ```
+
+## Docker Usage
+
+This project has been packaged into a docker image:
+[georgeflug/jwt-decode-service](https://hub.docker.com/r/georgeflug/jwt-decode-service)
