@@ -1,9 +1,9 @@
-var express = require('express');
-var config = require('./config');
+const express = require('express');
+const config = require('./config');
 const bodyParser = require('body-parser');
 const jwtDecode = require('jwt-decode');
 
-var app = express();
+const app = express();
 
 app.use(bodyParser.json());
 
