@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildDockerImage": "docker build -t georgeflug/jwt-decode-service:latest .",
+    "pushDockerImage": "docker push georgeflug/jwt-decode-service:latest"
   },
   "repository": {
     "type": "git",
