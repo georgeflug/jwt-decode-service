@@ -1,8 +1,10 @@
-var express = require("express");
+var express = require('express');
+var config = require('config');
+
 var app = express();
 
-app.listen(3000, () => {
- console.log("Server running on port 3000");
+app.listen(config.port, () => {
+ console.log(`Server running on port ${config.port}`);
 });
 
 app.get("/health", (req, res, next) => {
