@@ -4,6 +4,7 @@
   "description": "A simple REST API to decode JSON Web Tokens",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/georgeflug/jwt-decode-service/issues"
   },
-  "homepage": "https://github.com/georgeflug/jwt-decode-service#readme"
+  "homepage": "https://github.com/georgeflug/jwt-decode-service#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
